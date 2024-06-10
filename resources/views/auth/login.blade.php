@@ -46,7 +46,7 @@
 
                 <!-- Imagen -->
                 <div class="mr-5">
-                    <img src="{{ asset('imagenes/viaje-removebg-preview.png') }}" alt="Fondo de pantalla" class="w-7/8 h-7/8 object-cover ">
+                    <img src="{{ asset('images/viaje-removebg-preview.png') }}" alt="Fondo de pantalla" class="w-7/8 h-7/8 object-cover ">
                 </div>
 
                 
