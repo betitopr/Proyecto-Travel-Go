@@ -15,12 +15,10 @@
                 <div class="relative group">
                     <button class="text-gray-300 hover:text-white">Paquetes</button>
                     <div class="absolute hidden group-hover:block bg-white text-black mt-2 rounded shadow-lg">
-                        <li>
-                            <ul><a href="#" class="block px-4 py-2 hover:bg-gray-200">Paquete de Luna de Miel</a></ul>
-                            <ul><a href="#" class="block px-4 py-2 hover:bg-gray-200">Paquete Familiares</a></ul>
-                            <ul><a href="#" class="block px-4 py-2 hover:bg-gray-200">Eventos musicales</a></ul>
-                            <ul><a href="#" class="block px-4 py-2 hover:bg-gray-200">Paquetes</a></ul>
-                        </li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-200">Paquete de Luna de Miel</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-200">Paquete Familiares</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-200">Eventos musicales</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-200">Paquetes</a>
                     </div>
                 </div>
             </div>
