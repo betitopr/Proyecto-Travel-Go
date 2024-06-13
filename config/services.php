@@ -34,5 +34,7 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
-
+    'ipgeolocation' => [
+        'key' => '534a665f07434036a96b0adc9073eb3e',
+    ],
 ];
