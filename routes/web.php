@@ -17,12 +17,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-route::get('/paquetes',function(){
-    return view('Paquetes.Index');
-})->name('paquetes');
-
-route::get('/reserva',function(){
-    return view('Paquetes.Reserva');
-})->name('reserva');
-
 require __DIR__.'/auth.php';
