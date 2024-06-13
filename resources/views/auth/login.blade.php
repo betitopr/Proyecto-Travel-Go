@@ -42,24 +42,26 @@
                     <a class="underline text-sm text-orange-500 ml-20 hover:text-orange-700 rounded-md focus:outline-none focus:left-2 focus:left-offset-2 focus:left-orange-500" href="{{ route('register') }}">
                         {{ __('¿Todavía no te registras?') }}
                     </a>
+
+                    <div class="self-center mt-auto mt-10 mb-5 text-center ">
+                        @if (Route::has('password.request'))
+                            <a class="underline text-sm text-orange-500 hover:text-orange-700 rounded-md focus:outline-none focus:left-2 focus:left-offset-2 focus:left-orange-500" href="{{ route('password.request') }}">
+                                {{ __('¿Olvidaste tu contraseña?') }}
+                            </a>
+                        @endif
+                    </div>     
                 </form>
 
                 <!-- Imagen -->
                 <div class="mr-5">
-                    <img src="{{ asset('images/viaje-removebg-preview.png') }}" alt="Fondo de pantalla" class="w-7/8 h-7/8 object-cover ">
+                    <img src="{{ asset('images/icono5.ico') }}" alt="Fondo de pantalla" class="w-7/8 h-7/8 object-cover ">
                 </div>
 
                 
             </div>
 
             <!-- Olvidaste tu contraseña -->
-            <div class="self-center mt-auto mb-5 text-center">
-                @if (Route::has('password.request'))
-                    <a class="underline text-sm text-orange-500 hover:text-orange-700 rounded-md focus:outline-none focus:left-2 focus:left-offset-2 focus:left-orange-500" href="{{ route('password.request') }}">
-                        {{ __('¿Olvidaste tu contraseña?') }}
-                    </a>
-                @endif
-            </div>     
+
         </div>
     </div>
 </div>
