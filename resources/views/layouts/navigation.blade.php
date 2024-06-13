@@ -1,3 +1,9 @@
+@inject('ipGeolocationService', 'App\Services\IpGeolocationService')
+
+@php
+    $location = $ipGeolocationService->getLocation();
+    $countryFlag = $location['country_flag'] ?? '';
+@endphp
 <nav class="bg-black bg-opacity-50 fixed top-0 left-0 right-0 z-10">
     <div class="max-w-7/8 mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center">
@@ -63,6 +69,11 @@
                     @else
                         <a href="{{ route('login') }}" class="text-gray-300 hover:text-white">Iniciar Sesión</a>
                         @if (Route::has('register'))
+                        <div class="ml-4 flex items-center">
+                                @if ($countryFlag)
+                                    <img src="{{ $countryFlag }}" alt="Country Flag" class="h-4 w-6 mr-2">
+                                @endif
+                        </div>
                             <a href="{{ route('register') }}" class="ml-4 text-gray-300 hover:text-white">Registrarse</a>
                         @endif
                     @endauth
