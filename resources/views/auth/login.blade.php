@@ -1,6 +1,6 @@
 <x-guest-layout>
 <div class="flex justify-center items-center h-screen min-h-screen">
-    <div class="w-1/2 bg-white bg-opacity-80 shadow-md overflow-hidden sm:rounded-[30px]" style="height:60%; min-height: 60vh;">
+    <div class="w-[900px] bg-white bg-opacity-80 shadow-md overflow-hidden sm:rounded-[30px] h-[500px]">
         <div class="flex items-center justify-between h-full">         
                 <!-- Formulario -->
                 <form method="POST" action="{{ route('login') }}" class="w-4/5">
@@ -31,6 +31,14 @@
                         </label>
                     </div>
 
+                    <div class="self-center mt-auto mt-10 mb-5 text-center ">
+                        @if (Route::has('password.request'))
+                            <a class="underline text-sm text-orange-500 hover:text-orange-700 rounded-md focus:outline-none focus:left-2 focus:left-offset-2 focus:left-orange-500" href="{{ route('password.request') }}">
+                                {{ __('¿Olvidaste tu contraseña?') }}
+                            </a>
+                        @endif
+                    </div> 
+                    
                     <div class="flex items-center justify-between mt-4">
                         <div class="flex-grow text-center">
                             <x-primary-button class="ms-3 sm:rounded-full bg-orange-500 hover:bg-orange-700">
@@ -46,7 +54,7 @@
 
                 <!-- Imagen -->
                 <div class="mr-5">
-                    <img src="{{ asset('images/viaje-removebg-preview.png') }}" alt="Fondo de pantalla" class="w-7/8 h-7/8 object-cover ">
+                <img src="{{ asset('images/icono5.ico') }}" alt="Fondo de pantalla" class="w-[300px] h-[300px] object-cover ">
                 </div>
 
                 

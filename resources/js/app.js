@@ -27,4 +27,9 @@ document.addEventListener('DOMContentLoaded', function () {
       showItem(currentIndex);
     });
   });
-  
+const toggleBtn = document.getElementById('toggleBtn');
+const dropdownMenu = document.getElementById('dropdownMenu');
+
+toggleBtn.addEventListener('click', function() {
+  dropdownMenu.classList.toggle('hidden');
+});
